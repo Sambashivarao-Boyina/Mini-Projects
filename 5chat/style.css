@@ -1,0 +1,138 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #c4fff9;
+    
+}
+.nav{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #07beb8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 10px 0px;
+}
+.profil-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-left: 40px;
+    
+}
+.user-name{
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+.user-status{
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    margin-right: 20px;
+}
+.option{
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+.input-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    background-color: #c4fff9;
+}
+
+.input{
+    height: 50px;
+    width: 55rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    padding: 0px 20px ;
+    color: black;
+    border-color: transparent;
+    outline-color:transparent;
+}
+.input:focus{
+    outline-color:#07beb8 ;
+}
+
+.btn{
+    height: 50px;
+    width: 10rem;
+    background-color: #07beb8;
+    border-color: transparent;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    padding: 0px 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.input-options{
+    display: flex;
+    flex-direction: row;
+}
+.input-option{
+    background-color: #07beb8;
+    width:3rem;
+    height: 3rem;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.messages{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.message{
+    max-width: 600px;
+    padding: 1rem;
+    margin: 0.25rem;
+    font-size: 1.25rem;
+    font-weight: 500; 
+    border-radius:20px ;
+    flex: 0 0 auto;
+}
+.send{
+    background-color: white;
+    color: #07beb8;
+    border-top-right-radius:0px ;
+    align-self: flex-end;
+}
+.received{
+    
+    background-color: #07beb8;
+    color: white;
+    border-top-left-radius:0px ;
+    align-self: flex-start;
+}

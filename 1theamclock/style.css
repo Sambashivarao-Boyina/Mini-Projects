@@ -1,0 +1,141 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+   
+}
+:root{
+    --primary-color:#000;
+    --secondary-color:#fff;
+}
+html{
+    transition: all 1s ease-in-out;
+}
+html.dark{
+    --primary-color:#fff;
+    --secondary-color:#333;
+}
+html.dark{
+    background-color: #111;
+    color: var(--primary-color);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+}
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.btn{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: 300;
+    text-align: center;
+    border-radius: 5px;
+    padding: 7.5px 15px ;
+    cursor: pointer;
+}
+.clock{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.min{
+    height: 125px;
+    width: 2.75px;
+    z-index: 1;
+    background-color:var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translate(-50%, -100%) rotate(0deg);
+
+}
+.hour{
+    height: 75px;
+    width: 2.75px;
+    background-color:var(--primary-color);
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+.second{
+    height: 125px;
+    width: 2.75px;
+    background-color: red;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+.circ{
+    border: 2.75px solid red;
+    padding: 1px;
+    height: 4px;
+    width: 4px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    z-index: 3;
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    color: var(--primary-color);
+    font-weight: 300;
+    font-size: 50px;
+    text-transform: uppercase;
+ 
+}
+
+
+
+.calender{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    color: gray;
+    font-weight: 300;
+    font-size:15px;
+    text-transform: uppercase;
+}
+
+.calender > div{
+    margin-right: 2px;
+}
+.date{
+    color: var(--secondary-color);
+    border-radius: 50%;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    background-color: var(--primary-color);
+}

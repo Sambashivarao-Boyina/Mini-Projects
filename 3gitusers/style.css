@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Gabarito', cursive;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: #2A2A72;
+    
+}
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.inp{
+    color: white;
+    background-color: #4C2885;
+    border-color: transparent;
+    width:50vw;
+    height: 7.5vh;
+    padding: 5px 12.5px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    margin: 20px;
+    
+}
+.inp:focus{
+    outline: transparent;
+}
+.inp::placeholder{
+    color: #BBB9AB;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: #4C2885;
+    border-radius: 10px;
+    padding-right: 2rem;
+}
+a{
+    color:white;
+}
+.card-img{
+    padding: 2.5rem;
+}
+.img{
+    width: 150px;
+    height: 150px;
+    border: 5px solid #2A2A72;
+    border-radius: 50%;
+}
+.card-details{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 2.5rem;
+    padding: 0.5rem;
+}
+.card-owner{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom:  0.5rem;
+}
+.card-bio{
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+.card-com{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+.card-repos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.repo{
+    background-color: #2A2A72;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+@media(max-width:500px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem;
+        margin: 20px;
+    }
+    .inp{
+        width: 90vw;
+        margin: 10px;
+    }
+    .repo{
+        margin:5px;
+        margin-left: 0px;
+    }
+}
